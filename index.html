@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <script src="./JS/Main.js" defer></script>
+    <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+    <div class="board">
+        <div class="left">
+            <div class="bill-input-container">
+                <div class="bill-input-alert">
+                  <label for="billAmount">Bill</label>
+                  <span class="error1">Can't be Zero</span>
+                </div>
+                <div class="bill-input1">
+                    <img src="./images/icon-dollar.svg" alt="Dollar icon">
+                    <input class="amountInput" placeholder="0" type="number" id="billAmount">
+                </div>
+            </div>
+
+            <div class="select-tips-container">
+                <label for="tipPercentage">Select Tip %</label>
+                <div class="select-buttons">
+                    <button class="percent-btn">5%</button>
+                    <button class="percent-btn">10%</button>
+                    <button class="percent-btn">15%</button>
+                    <button class="percent-btn">25%</button>
+                    <button class="percent-btn">50%</button>
+                    <input type="number" id="tipPercentage" placeholder="Custom">
+                </div>
+            </div>
+
+            <div class="bill-input-container">      
+                <div class="bill-input-alert">
+                  <label for="billAmount">Number of People</label>
+                  <span class="error2">Can't be Zero</span>
+                </div>
+                <div class="bill-input2">
+                    <img src="./images/icon-person.svg" alt="Person icon">
+                    <input  class="amountInput" type="number" placeholder="0" id="numberOfPeople">
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="result-container">
+                <div class="result-header">
+                    <div class="tip-amount">
+                        <div class="left-side">
+                            <h2>Tip Amount</h2>
+                            / person
+                        </div>
+                        <div class="right-side" id="tip-amount">
+                            
+                        </div>
+                    </div>
+                    <div class="total">
+                        <div class="left-side">
+                            <h2>Total</h2>
+                            / person
+                        </div>
+                        <div class="right-side" id="total">
+                            
+                        </div>
+                    </div>
+                </div>
+                <button id="resetButton">RESET</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
